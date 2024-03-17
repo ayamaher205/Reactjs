@@ -29,8 +29,8 @@ const Skills = () => {
                     </div>
                     <div className="col progress-bar-container">
                         <table className="table-primary" style={{ borderSpacing: "0" }}>
-                            { contents.map((e) => {
-                            return (<tr className="table-secondary">
+                            { contents.map((e,index) => {
+                            return (<tr className="table-secondary" key={index}>
                                 <td className="table-secondary" style={{ width: "400px", padding: "0" }}>
                                     <CustomizedProgressBars content={e}></CustomizedProgressBars>
                                 </td>

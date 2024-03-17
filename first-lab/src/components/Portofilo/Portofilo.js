@@ -15,18 +15,28 @@ const Portofilo = () => {
     return (
         <Box sx={{ flexGrow: 1 }}>
             <h1>Portofilo</h1>
-            <BasicCard></BasicCard>
             <Grid container spacing={2}>
                 {
-                    contents.map( ( e ) => {
+                    contents.map( ( e,index ) => {
                         return (
-                            <Grid xs={4}>
-                                <BasicCard content={e}></BasicCard>
-                            </Grid>
-                        )
+                          <Grid xs={4}>
+                            {(index + 1) % 2 === 0 ? (
+                              <BasicCard
+                                content={e}
+                                bgColor={"#00000063"}
+                              ></BasicCard>
+                            ) : (
+                              <BasicCard
+                                content={e}
+                                bgColor={"#000000c9"}
+                              ></BasicCard>
+                            )}
+                          </Grid>
+                        );
                     } )
                 }
             </Grid>
+            <br/>
         </Box>
     );
 };

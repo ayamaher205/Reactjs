@@ -4,12 +4,12 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 
 
-const BasicCard = ({content}) => {
+const BasicCard = ({content, bgColor}) => {
   return (
     <Card className="card" sx={{ minWidth: 275 }}>
-      <CardContent>
+      <CardContent sx={{ bgcolor: bgColor }}>
         <Typography variant="h5" component="div">
-         {content}
+          {content}
         </Typography>
         <hr />
       </CardContent>
