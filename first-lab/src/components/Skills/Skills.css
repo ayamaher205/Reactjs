@@ -1,0 +1,33 @@
+/* styles.css */
+
+.skills-container {
+  background-color: rgb(54, 53, 53);
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.skills-content {
+  text-align: center;
+  color: whitesmoke;
+  width: 70%;
+  margin: auto;
+}
+
+.focus-container {
+  margin: 40px;
+  padding: 20px;
+}
+
+.focus-item {
+  text-align: center;
+  color: whitesmoke;
+}
+
+.progress-bar-container {
+  color: whitesmoke;
+  margin-left: 240px;
+}
+
+.progress-bar {
+  background-color: rgb(220 220 220);
+}
