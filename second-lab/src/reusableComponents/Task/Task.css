@@ -13,3 +13,6 @@
 h2{
     color: white;
 }
+.line{
+    text-decoration: line-through;
+}

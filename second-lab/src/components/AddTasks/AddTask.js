@@ -2,15 +2,12 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import './AddTask.css'
-const ToDo = () => {
-  const handleSubmit = (e) => {
-    console.log( e.target.value );
-  }
+const ToDo = ({handler}) => {
   return (
     <Box className="txt" component="form" noValidate autoComplete="off">
       <h1>To-DO App</h1>
-      <TextField 
-        onChange={handleSubmit}
+      <TextField
+        onChange={handler}
         className="inpt"
         id="outlined-basic"
         variant="outlined"
@@ -18,5 +15,5 @@ const ToDo = () => {
       />
     </Box>
   );
-}
+};
 export default ToDo;
