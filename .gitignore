@@ -1,23 +1,30 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Ignore dependencies and build artifacts
 
-# dependencies
-/first-lab/node_modules
-/first-lab/.pnp
-/first-lab/.pnp.js
+# Node.js dependencies
+/*/node_modules
 
-# testing
+# PnP files
+/*.pnp
+/*.pnp.js
+
+# Test coverage reports
 /coverage
 
-# production
-/first-lab/build
+# Production build
+/*/build
 
-# misc
+# Ignore miscellaneous files
+
+# macOS directory settings
 .DS_Store
+
+# Local environment files
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
+# NPM and Yarn logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
